@@ -4,9 +4,10 @@ import React, { useState } from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { Route, Router, Routes, useNavigate } from 'react-router-dom';
 import Page from './components/Page';
-import Detail from './components/Detail2';
+import Detail from './components/Detail';
 import data from './data';
 import Detail2 from './components/Detail2';
+import Tool from './components/Tool';
 
 export let StockContext = React.createContext();
 
@@ -59,7 +60,10 @@ function App() {
             </StockContext.Provider>
           }/>
       </Routes>
-      
+      <Routes>
+        <Route path='/Tool' element={<Tool/>}/>
+        <Route path='/detail/:GONGUSEQ/:SUBGONGUNAME/:GONGUNAME/:RENTALCOST/:GONGUCOUNT/:DETAILADDR/:TELEPHONE' element={<Detail/>}/>
+      </Routes>
 
     </div>
     
