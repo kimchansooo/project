@@ -28,6 +28,7 @@ const Detail = () => {
         <Card.Text>
           전화번호 : {TELEPHONE}
         </Card.Text>
+        
         <Button variant="primary" 
          onClick={() => { navigate('/') }}
         >뒤로 가기</Button>
