@@ -13,7 +13,7 @@ function Detail2(props){
         <>
            <div className="col-md-12 col-sm-12">
             <div className="row">
-                <div className="col-md-6">
+                <div className="col-md-4">
             <img src={findId.img} width={'100%'} />
             </div>
             <div className="col-md-6">
